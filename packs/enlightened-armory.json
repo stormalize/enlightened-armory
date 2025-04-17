@@ -1,0 +1,1539 @@
+{
+  "schema": "v1",
+  "enabled": true,
+  "name": "enlightened-armory",
+  "anchor": {
+    "Screen": "Center"
+  },
+  "pos": [
+    -251.0,
+    500.0
+  ],
+  "opacity": 1.0,
+  "trigger": {
+    "source": "Inherit",
+    "threshold": {
+      "threshold_type": "Always",
+      "amount_type": "Intensity"
+    }
+  },
+  "layer": 0,
+  "elements": [
+    {
+      "enabled": true,
+      "name": "engi-spear",
+      "anchor": "Parent",
+      "pos": [
+        0.0,
+        0.0
+      ],
+      "opacity": 1.0,
+      "trigger": {
+        "source": {
+          "Ability": [
+            73122
+          ]
+        },
+        "threshold": {
+          "threshold_type": "Always",
+          "amount_type": "Intensity"
+        }
+      },
+      "filter": {
+        "player": {
+          "combat": null,
+          "specs": [
+            "Engineer",
+            "Scrapper",
+            "Holosmith",
+            "Mechanist"
+          ],
+          "weapons": [
+            "Spear"
+          ],
+          "traits": [],
+          "mounts": []
+        },
+        "map": {
+          "category": [],
+          "whitelist": true,
+          "ids": []
+        }
+      },
+      "animation": null,
+      "type": "Group",
+      "members": [
+        {
+          "enabled": true,
+          "name": "main",
+          "anchor": "Parent",
+          "pos": [
+            0.0,
+            0.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": "Always",
+            "threshold": {
+              "threshold_type": "Always",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Icon",
+          "icon": {
+            "File": "enlightened-armory\\engi-spear\\main.png"
+          },
+          "tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "zoom": 1.0,
+          "round": 0.0,
+          "border_size": 0.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "duration_bar": false,
+          "duration_text": false,
+          "stacks_text": false,
+          "size": [
+            216.0,
+            64.0
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "focusing-active",
+          "anchor": "Parent",
+          "pos": [
+            12.0,
+            0.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": {
+              "Buff": [
+                74447
+              ]
+            },
+            "threshold": {
+              "threshold_type": "Present",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Icon",
+          "icon": {
+            "File": "enlightened-armory\\engi-spear\\focusing.png"
+          },
+          "tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "zoom": 1.0,
+          "round": 0.0,
+          "border_size": 0.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "duration_bar": false,
+          "duration_text": false,
+          "stacks_text": false,
+          "size": [
+            28.0,
+            28.0
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "lightning-rod-intensity-bottom",
+          "anchor": "Parent",
+          "pos": [
+            -90.0,
+            10.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": {
+              "Buff": [
+                73129
+              ]
+            },
+            "threshold": {
+              "threshold_type": "Present",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Bar",
+          "progress_kind": "Intensity",
+          "max": 12,
+          "lower_bound": 0.0,
+          "progress_factor": 1.0,
+          "fill": [
+            1.0,
+            0.26086956,
+            0.0,
+            1.0
+          ],
+          "background": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "border_size": 0.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tick_size": 0.0,
+          "tick_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "size": [
+            75.0,
+            4.0
+          ],
+          "align": "Right",
+          "direction": "Right",
+          "tick_unit": "Percent",
+          "ticks": [
+            0.2628
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "lightning-rod-intensity-top",
+          "anchor": "Parent",
+          "pos": [
+            -90.0,
+            -10.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": {
+              "Buff": [
+                73129
+              ]
+            },
+            "threshold": {
+              "threshold_type": "Present",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Bar",
+          "progress_kind": "Intensity",
+          "max": 12,
+          "lower_bound": 0.0,
+          "progress_factor": 1.0,
+          "fill": [
+            1.0,
+            0.2627451,
+            0.0,
+            1.0
+          ],
+          "background": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "border_size": 0.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tick_size": 1.0,
+          "tick_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "size": [
+            75.0,
+            4.0
+          ],
+          "align": "Right",
+          "direction": "Right",
+          "tick_unit": "Percent",
+          "ticks": []
+        },
+        {
+          "enabled": true,
+          "name": "meter",
+          "anchor": "Parent",
+          "pos": [
+            -50.0,
+            0.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": "Always",
+            "threshold": {
+              "threshold_type": "Always",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Icon",
+          "icon": {
+            "File": "enlightened-armory\\engi-spear\\meter.png"
+          },
+          "tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "zoom": 1.0,
+          "round": 0.0,
+          "border_size": 0.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "duration_bar": false,
+          "duration_text": false,
+          "stacks_text": false,
+          "size": [
+            84.0,
+            28.0
+          ]
+        }
+      ]
+    },
+    {
+      "enabled": true,
+      "name": "ele-hammer",
+      "anchor": "Parent",
+      "pos": [
+        0.0,
+        0.0
+      ],
+      "opacity": 1.0,
+      "trigger": {
+        "source": "Inherit",
+        "threshold": {
+          "threshold_type": "Always",
+          "amount_type": "Intensity"
+        }
+      },
+      "filter": {
+        "player": {
+          "combat": null,
+          "specs": [
+            "Elementalist",
+            "Tempest",
+            "Weaver",
+            "Catalyst"
+          ],
+          "weapons": [
+            "Hammer"
+          ],
+          "traits": [],
+          "mounts": []
+        },
+        "map": {
+          "category": [],
+          "whitelist": true,
+          "ids": []
+        }
+      },
+      "animation": null,
+      "type": "Group",
+      "members": [
+        {
+          "enabled": true,
+          "name": "main",
+          "anchor": "Parent",
+          "pos": [
+            0.0,
+            0.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": "Always",
+            "threshold": {
+              "threshold_type": "Always",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Icon",
+          "icon": {
+            "File": "enlightened-armory\\ele-hammer\\main.png"
+          },
+          "tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "zoom": 1.0,
+          "round": 0.0,
+          "border_size": 0.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "duration_bar": false,
+          "duration_text": false,
+          "stacks_text": false,
+          "size": [
+            240.0,
+            76.0
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "glow-front",
+          "anchor": "Parent",
+          "pos": [
+            9.0,
+            -1.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": {
+              "Buff": [
+                62931,
+                62984,
+                62707,
+                62768
+              ]
+            },
+            "threshold": {
+              "threshold_type": "Present",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": {
+            "kind": "Pulse",
+            "period": 2500
+          },
+          "type": "Icon",
+          "icon": {
+            "File": "enlightened-armory\\ele-hammer\\glow-front.png"
+          },
+          "tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "zoom": 1.0,
+          "round": 0.0,
+          "border_size": 0.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "duration_bar": false,
+          "duration_text": false,
+          "stacks_text": false,
+          "size": [
+            204.0,
+            56.0
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "fire-actve",
+          "anchor": "Parent",
+          "pos": [
+            -59.0,
+            -2.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": {
+              "Buff": [
+                62931
+              ]
+            },
+            "threshold": {
+              "threshold_type": "Present",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Icon",
+          "icon": {
+            "File": "enlightened-armory\\ele-hammer\\fire-active.png"
+          },
+          "tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "zoom": 1.0,
+          "round": 0.0,
+          "border_size": 0.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "duration_bar": false,
+          "duration_text": false,
+          "stacks_text": false,
+          "size": [
+            36.0,
+            44.0
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "water-actve",
+          "anchor": "Parent",
+          "pos": [
+            -23.0,
+            -2.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": {
+              "Buff": [
+                62984
+              ]
+            },
+            "threshold": {
+              "threshold_type": "Present",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Icon",
+          "icon": {
+            "File": "enlightened-armory\\ele-hammer\\water-active.png"
+          },
+          "tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "zoom": 1.0,
+          "round": 0.0,
+          "border_size": 0.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "duration_bar": false,
+          "duration_text": false,
+          "stacks_text": false,
+          "size": [
+            36.0,
+            44.0
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "air-actve",
+          "anchor": "Parent",
+          "pos": [
+            15.0,
+            -2.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": {
+              "Buff": [
+                62707
+              ]
+            },
+            "threshold": {
+              "threshold_type": "Present",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Icon",
+          "icon": {
+            "File": "enlightened-armory\\ele-hammer\\air-active.png"
+          },
+          "tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "zoom": 1.0,
+          "round": 0.0,
+          "border_size": 0.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "duration_bar": false,
+          "duration_text": false,
+          "stacks_text": false,
+          "size": [
+            36.0,
+            44.0
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "earth-actve",
+          "anchor": "Parent",
+          "pos": [
+            52.0,
+            -2.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": {
+              "Buff": [
+                62768
+              ]
+            },
+            "threshold": {
+              "threshold_type": "Present",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Icon",
+          "icon": {
+            "File": "enlightened-armory\\ele-hammer\\earth-active.png"
+          },
+          "tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "zoom": 1.0,
+          "round": 0.0,
+          "border_size": 0.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "duration_bar": false,
+          "duration_text": false,
+          "stacks_text": false,
+          "size": [
+            36.0,
+            44.0
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "duration",
+          "anchor": "Parent",
+          "pos": [
+            -76.0,
+            24.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": {
+              "Buff": [
+                62931,
+                62984,
+                62707,
+                62768
+              ]
+            },
+            "threshold": {
+              "threshold_type": "Present",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Bar",
+          "progress_kind": "Duration",
+          "max": 25,
+          "lower_bound": 0.0,
+          "progress_factor": 1.0,
+          "fill": [
+            0.99999,
+            1.0,
+            0.99999,
+            1.0
+          ],
+          "background": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "border_size": 0.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tick_size": 1.0,
+          "tick_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "size": [
+            140.0,
+            2.0
+          ],
+          "align": "Right",
+          "direction": "Right",
+          "tick_unit": "Percent",
+          "ticks": []
+        }
+      ]
+    },
+    {
+      "enabled": true,
+      "name": "thief-axe",
+      "anchor": "Parent",
+      "pos": [
+        0.0,
+        0.0
+      ],
+      "opacity": 1.0,
+      "trigger": {
+        "source": "Inherit",
+        "threshold": {
+          "threshold_type": "Always",
+          "amount_type": "Intensity"
+        }
+      },
+      "filter": {
+        "player": {
+          "combat": null,
+          "specs": [
+            "Thief",
+            "Daredevil",
+            "Deadeye",
+            "Specter"
+          ],
+          "weapons": [
+            "AxeMain"
+          ],
+          "traits": [],
+          "mounts": []
+        },
+        "map": {
+          "category": [],
+          "whitelist": true,
+          "ids": []
+        }
+      },
+      "animation": null,
+      "type": "Group",
+      "members": [
+        {
+          "enabled": true,
+          "name": "main",
+          "anchor": "Parent",
+          "pos": [
+            0.0,
+            0.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": "Always",
+            "threshold": {
+              "threshold_type": {
+                "Exact": 1.0
+              },
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Icon",
+          "icon": {
+            "File": "enlightened-armory\\thief-axe\\main.png"
+          },
+          "tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "zoom": 1.0,
+          "round": 0.0,
+          "border_size": 0.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "duration_bar": false,
+          "duration_text": false,
+          "stacks_text": false,
+          "size": [
+            216.0,
+            64.0
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "oh-dagger",
+          "anchor": "Parent",
+          "pos": [
+            0.0,
+            0.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": {
+              "Ability": [
+                71864
+              ]
+            },
+            "threshold": {
+              "threshold_type": "Always",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Icon",
+          "icon": {
+            "File": "enlightened-armory\\thief-axe\\dagger.png"
+          },
+          "tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "zoom": 1.0,
+          "round": 0.0,
+          "border_size": 0.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "duration_bar": false,
+          "duration_text": false,
+          "stacks_text": false,
+          "size": [
+            216.0,
+            64.0
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "oh-pistol",
+          "anchor": "Parent",
+          "pos": [
+            0.0,
+            0.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": {
+              "Ability": [
+                71965
+              ]
+            },
+            "threshold": {
+              "threshold_type": "Always",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Icon",
+          "icon": {
+            "File": "enlightened-armory\\thief-axe\\pistol.png"
+          },
+          "tint": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "zoom": 1.0,
+          "round": 0.0,
+          "border_size": 0.0,
+          "border_color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "conditions": [],
+          "duration_bar": false,
+          "duration_text": false,
+          "stacks_text": false,
+          "size": [
+            216.0,
+            64.0
+          ]
+        },
+        {
+          "enabled": true,
+          "name": "axe-counter",
+          "anchor": "Parent",
+          "pos": [
+            0.0,
+            0.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": {
+              "Buff": [
+                71815
+              ]
+            },
+            "threshold": {
+              "threshold_type": "Always",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Group",
+          "members": [
+            {
+              "enabled": true,
+              "name": "1",
+              "anchor": "Parent",
+              "pos": [
+                0.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "source": "Inherit",
+                "threshold": {
+                  "threshold_type": {
+                    "Above": 1.0
+                  },
+                  "amount_type": "Intensity"
+                }
+              },
+              "filter": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "weapons": [],
+                  "traits": [],
+                  "mounts": []
+                },
+                "map": {
+                  "category": [],
+                  "whitelist": true,
+                  "ids": []
+                }
+              },
+              "animation": null,
+              "type": "Icon",
+              "icon": {
+                "File": "enlightened-armory\\thief-axe\\active-1.png"
+              },
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "zoom": 1.0,
+              "round": 0.0,
+              "border_size": 0.0,
+              "border_color": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "conditions": [],
+              "duration_bar": false,
+              "duration_text": false,
+              "stacks_text": false,
+              "size": [
+                216.0,
+                64.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "2",
+              "anchor": "Parent",
+              "pos": [
+                0.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "source": "Inherit",
+                "threshold": {
+                  "threshold_type": {
+                    "Above": 2.0
+                  },
+                  "amount_type": "Intensity"
+                }
+              },
+              "filter": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "weapons": [],
+                  "traits": [],
+                  "mounts": []
+                },
+                "map": {
+                  "category": [],
+                  "whitelist": true,
+                  "ids": []
+                }
+              },
+              "animation": null,
+              "type": "Icon",
+              "icon": {
+                "File": "enlightened-armory\\thief-axe\\active-2.png"
+              },
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "zoom": 1.0,
+              "round": 0.0,
+              "border_size": 0.0,
+              "border_color": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "conditions": [],
+              "duration_bar": false,
+              "duration_text": false,
+              "stacks_text": false,
+              "size": [
+                216.0,
+                64.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "3",
+              "anchor": "Parent",
+              "pos": [
+                0.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "source": "Inherit",
+                "threshold": {
+                  "threshold_type": {
+                    "Above": 3.0
+                  },
+                  "amount_type": "Intensity"
+                }
+              },
+              "filter": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "weapons": [],
+                  "traits": [],
+                  "mounts": []
+                },
+                "map": {
+                  "category": [],
+                  "whitelist": true,
+                  "ids": []
+                }
+              },
+              "animation": null,
+              "type": "Icon",
+              "icon": {
+                "File": "enlightened-armory\\thief-axe\\active-3.png"
+              },
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "zoom": 1.0,
+              "round": 0.0,
+              "border_size": 0.0,
+              "border_color": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "conditions": [],
+              "duration_bar": false,
+              "duration_text": false,
+              "stacks_text": false,
+              "size": [
+                216.0,
+                64.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "4",
+              "anchor": "Parent",
+              "pos": [
+                0.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "source": "Inherit",
+                "threshold": {
+                  "threshold_type": {
+                    "Above": 4.0
+                  },
+                  "amount_type": "Intensity"
+                }
+              },
+              "filter": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "weapons": [],
+                  "traits": [],
+                  "mounts": []
+                },
+                "map": {
+                  "category": [],
+                  "whitelist": true,
+                  "ids": []
+                }
+              },
+              "animation": null,
+              "type": "Icon",
+              "icon": {
+                "File": "enlightened-armory\\thief-axe\\active-4.png"
+              },
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "zoom": 1.0,
+              "round": 0.0,
+              "border_size": 0.0,
+              "border_color": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "conditions": [],
+              "duration_bar": false,
+              "duration_text": false,
+              "stacks_text": false,
+              "size": [
+                216.0,
+                64.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "5",
+              "anchor": "Parent",
+              "pos": [
+                0.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "source": "Inherit",
+                "threshold": {
+                  "threshold_type": {
+                    "Above": 5.0
+                  },
+                  "amount_type": "Intensity"
+                }
+              },
+              "filter": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "weapons": [],
+                  "traits": [],
+                  "mounts": []
+                },
+                "map": {
+                  "category": [],
+                  "whitelist": true,
+                  "ids": []
+                }
+              },
+              "animation": null,
+              "type": "Icon",
+              "icon": {
+                "File": "enlightened-armory\\thief-axe\\active-5.png"
+              },
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "zoom": 1.0,
+              "round": 0.0,
+              "border_size": 0.0,
+              "border_color": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "conditions": [],
+              "duration_bar": false,
+              "duration_text": false,
+              "stacks_text": false,
+              "size": [
+                216.0,
+                64.0
+              ]
+            },
+            {
+              "enabled": true,
+              "name": "6",
+              "anchor": "Parent",
+              "pos": [
+                0.0,
+                0.0
+              ],
+              "opacity": 1.0,
+              "trigger": {
+                "source": "Inherit",
+                "threshold": {
+                  "threshold_type": {
+                    "Above": 6.0
+                  },
+                  "amount_type": "Intensity"
+                }
+              },
+              "filter": {
+                "player": {
+                  "combat": null,
+                  "specs": [],
+                  "weapons": [],
+                  "traits": [],
+                  "mounts": []
+                },
+                "map": {
+                  "category": [],
+                  "whitelist": true,
+                  "ids": []
+                }
+              },
+              "animation": null,
+              "type": "Icon",
+              "icon": {
+                "File": "enlightened-armory\\thief-axe\\active-6.png"
+              },
+              "tint": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "zoom": 1.0,
+              "round": 0.0,
+              "border_size": 0.0,
+              "border_color": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "conditions": [],
+              "duration_bar": false,
+              "duration_text": false,
+              "stacks_text": false,
+              "size": [
+                216.0,
+                64.0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
