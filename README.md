@@ -12,10 +12,10 @@ Dedicated Weapon UI to help more clearly see mechanics of the more recently-adde
 - Thief Axe
 - Thief Spear
 - Guardian Spear
+- Revenant Spear
 
 ## Planned
 
 - Elementalist Pistol
 - Ranger Mace
 - Necromancer Spear
-- Revenant Spear
